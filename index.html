@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="sabestainstyle.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+</head>
+  <body>
+    <section id="content"></section>
+
+    <script id="dailyrates-template" type="text/x-handlebars-template">
+    <div class="template-container">
+      <div>
+        <img class="logo" src="Images/Sebastian BDC Logo.png" alt="logo">
+      </div>
+      <div class="header">
+        <h1 class="header-tittle">Today's Exchange Rates</h1>
+        <h2 class="header-date">{{date}}</h2>
+      </div>
+    
+      <div class="daily-rates">
+        <div class="rates-container">
+          <div class="rates-heading">
+            <h2></h2>
+            <h2>Buy</h2>
+            <h2>Sell</h2>
+          </div>
+          {{#dailyrates}}
+          <div class="rates-items">
+            <div class="rates-sub-items">
+              <img class="flags" src="{{image}}">
+            </div>
+            
+            <p class="rates-sub-items">₦{{buy}}</p>
+            <div class="divider"></div>
+            <p class="rates-sub-items">₦{{sell}}</p>
+          </div>
+          {{/dailyrates}}
+        </div>
+      </div>
+      <div>
+        <div class="info-text">
+          <p>To learn more, call us on</p>
+          <p class="Phone-number" >08141151047, 09068776657</p>
+          <p class="domain">visit <span>www.sebastianbdc.com </span>today!</p>
+        </div>
+        <div>
+          <img class="footer-image" src="Images/Footer_Image.jpg" alt="human holding money">
+        </div>
+      </div>
+    </div>
+    
+    </script>
+    <script src="index.js"></script>
+	</body>
+</html>

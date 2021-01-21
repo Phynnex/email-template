@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.template-container{
+  width: 45%;
+  height: 90vh;
+  position: relative;
+  top: 1.875rem;
+  margin: 0 auto;
+  background-image: url('/Images/blue_background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius:8px;
+}
+
+.logo{
+  width:12%;
+  height: 10vh;
+  border-radius: 4px;
+  padding-left: 1.25rem;
+  object-fit: cover;
+}
+
+.header{
+  text-align: center;
+}
+
+.header-tittle{
+  font-size: 2.375rem;
+  font-weight: 900;
+  margin-top: 0.312rem;
+  color: #f1f1f1;
+}
+
+.header-date{
+  color: #f0ce0f;
+  margin-top: -1.25rem;
+}
+
+.rates-container{
+  width: 30vw;
+  height: 45vh;
+  margin: 0 auto;
+  background-color: blanchedalmond;
+  border-radius: 8px;
+}
+
+.rates-heading {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 0px;
+  color: #cbbbce;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-left: 4.375rem;
+  text-align: center;
+}
+
+.rates-items {
+  display: flex;
+  width: 100%;
+}
+
+.rates-sub-items {
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 3);
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #0770a1;
+}
+
+
+.divider {
+  width: 0.03125rem;
+  background-color: gray;
+  position: absolute;
+  height: 12.5rem;
+  top: 14rem;
+  right: 15rem;
+}
+
+.flags{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.info-text{
+  position: absolute;
+  bottom: 0.5rem;
+  left: 1.5rem;
+  color: #f1f1f1;
+}
+
+.info-text p{
+  margin: 0;
+}
+
+.Phone-number{
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.domain{
+  font-size: 1.25rem;
+  font-weight: bold; 
+  color: #0770a1;
+}
+
+.domain span{
+  color: #f0ce0f;
+}
+
+.footer-image{
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  border-radius: 50%;
+  height: 22vh;
+  width: 25%;
+  object-fit: cover;
+}
+
+
+@media screen and (max-width: 768px) {
+  .template-container{
+   width: 100%;
+  }
+
+  .header-tittle{
+    margin-top: -20px;
+  }
+
+  .rates-container{
+    width: 80%;
+  }
+
+  .divider{
+    right: 18rem;
+    top: 14rem;
+    position: fixed;
+    height: 14rem;
+  }
+
+  .footer-image{
+    height: 20vh;
+    width: 18%;
+    position: relative;
+    bottom: 1.5rem;
+    left: 38rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .template-container{
+   width: 100%;
+  }
+
+  .header-tittle{
+  font-size: 1.6rem;
+  }
+
+  .header-date{
+    font-size: 1rem;
+  }
+
+  .rates-container{
+    width: 80%;
+  }
+
+  .divider{
+    right: 11rem;
+    top: 13rem;
+    position: fixed;
+    height: 12rem;
+  }
+
+  .footer-image{
+    height: 18vh;
+    width: 20%;
+    position: relative;
+    bottom: 1.5rem;
+    left: 23.2rem;
+  }
+}
+
